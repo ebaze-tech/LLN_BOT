@@ -11,7 +11,6 @@ const InputBox = ({ onSend, disabled }) => {
     if (input.trim() && !disabled) {
       onSend(input)
       setInput('')
-      // Refocus after send
       setTimeout(() => inputRef.current?.focus(), 0)
     }
   }
@@ -19,10 +18,9 @@ const InputBox = ({ onSend, disabled }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className='p-4 bg-white border-t border-gray-200 relative'
+      className='p-4 bg-white border-t border-gray-200'
     >
       <div className='flex items-center space-x-3'>
-        {/* Optional Emoji Button (Placeholder) */}
         <button
           type='button'
           className='p-2 text-gray-500 hover:text-indigo-600 transition rounded-full hover:bg-gray-100'
