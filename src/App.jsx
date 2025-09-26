@@ -1,7 +1,7 @@
 // App.js
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ChatBot from './components/chatBot'
+import ChatBot from './components/ChatBot'
 const App = () => {
   return (
     <BrowserRouter>
