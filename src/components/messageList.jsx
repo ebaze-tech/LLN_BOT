@@ -1,6 +1,6 @@
 // src/components/MessageList.js
 import React from 'react'
-import Message from './message'
+import Message from './Message'
 import ScrollToBottom from 'react-scroll-to-bottom'
 
 const MessageList = ({ messages, isLoading }) => {
